@@ -6,6 +6,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+              <!-- viewportはスマートフォンの設定 -->
+              <!-- initial-scaleはズーム倍率の初期値　つまり1は拡大縮小しない -->
     <!--bootstrap-->
     <!--CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -16,9 +18,14 @@
 
        @yield('navbar')
        
-       @yield('content')
+       <div class="container">
+        @yield('content')
+       </div>
 
        @yield('footer')
        <!-- これらはただの場所の指定 -->
   </body>
 </html>
+
+<!-- containerクラスは、
+Bootstrapでサイトのコンテンツを中央に配置して水平方向に埋め込む手段 -->
