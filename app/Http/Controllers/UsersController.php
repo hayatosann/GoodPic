@@ -14,4 +14,10 @@ class UsersController extends Controller
 
         return view('user/show', ['user'=>$user]);
     }
+
+    public function edit()
+    {
+        $user = Auth::user();
+        return view('user/edit', ['user'=> $user]);
+    }
 }
