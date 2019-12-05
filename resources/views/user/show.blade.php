@@ -17,10 +17,10 @@
     <div class="col-md-8">
       <div class="row">
         <h1>{{ $user->name }}</h1>
-
+        @if ($user->id == Auth::user()->id)
           <a class="btn btn-outline-dark common-btn edit-profile-btn" href="/users/edit">プロフィールを編集</a>
           <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
-
+        @endif
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
