@@ -16,6 +16,8 @@
        @yield('navbar')
        
        @yield('content')
+
+       @yield('footer')
        <!-- これらはただの場所の指定 -->
   </body>
 </html>
