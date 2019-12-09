@@ -16,4 +16,9 @@ class Post extends Model
   {
     return $this->hasMany('App\Like');
   }
+
+  public function likedBy($user)
+  {
+    return Like::where('user_id', $user->id)->where('post_id', $this->id);
+  }
 }
