@@ -22,6 +22,12 @@
 
         <a href="/users/{{ $post->user->id }}">
           <img src="/storage/post_images/{{ $post->id }}.jpg" class="card-img-top" />
+          @if ($post->user->id == Auth::user()->id)
+          	<a class="ml-auto mx-0 my-auto" rel="nofollow" href="/postsdelete/{{ $post->id }}">
+              <div class="delete-post-icon">
+              </div>
+          	</a>
+          @endif
         </a>
 
 
