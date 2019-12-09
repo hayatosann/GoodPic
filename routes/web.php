@@ -27,3 +27,6 @@ Route::get('/posts/new', 'PostsController@new')->name('new');
 Route::post('/posts','PostsController@store');
 
 Route::get('/postdelete/{post_id}', 'PostsController@destroy');
+
+Route::get('/posts/{post_id}/likes','LikesController@store');
+Route::get('/likes/{like_id}', 'LikesController@destroy');
