@@ -26,4 +26,4 @@ Route::get('/posts/new', 'PostsController@new')->name('new');
 
 Route::post('/posts','PostsController@store');
 
-
+Route::get('/postdelete/{post_id}', 'PostsController@destroy');
