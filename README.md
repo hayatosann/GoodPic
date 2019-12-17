@@ -8,6 +8,7 @@ url:https://goodpict.herokuapp.com/
 
 # Development environment
 XAMPP環境(X:Linux、macOS、Solarisのクロスプラットフォーム、ApacheのA、MariaDBのM、PHPのP、PerlのP)
+【Git】のGUIツール【SourceTree】を使用.
 
 # Deploy
 Herokuサービスを利用したデプロイ
